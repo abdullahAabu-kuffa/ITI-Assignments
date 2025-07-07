@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Registration Form</title>
+
+</head>
+
+<body style="display: flex; flex-direction: column; align-items: center; justify-content: center;">
+
+    <h2 style="text-align: center;">User Registration</h2>
+
+    <form action="Thankyou.html" method="get">
+
+        <input type="hidden" name="userId" value="12345" />
+
+        <div>
+            <label for="fname" accesskey="F">First Name </label>
+            <input type="text" id="fname" name="fname">
+        </div>
+        <br>
+        <div>
+            <label for="lname" accesskey="L">Last Name</label>
+            <input type="text" id="lname" name="lname">
+        </div>
+        <br>
+        <div>
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email">
+        </div>
+        <br>
+        <div>
+            <label for="password" accesskey="P">Password</label>
+            <input type="password" id="password" name="password">
+        </div>
+        <br>
+        <div class="form-group">
+            <label for="repassword">Repeat Password</label>
+            <input type="password" id="repassword" name="repassword" />
+        </div>
+        <br>
+        <div>
+            <label for="birth">Birth Date</label>
+            <input type="date" id="birth" name="birth">
+        </div>
+        <br>
+        <div>
+            <label for="photo">Upload Your Picture</label>
+            <input type="file" id="photo" name="photo" accept="image/png">
+        </div>
+        <br>
+        <fieldset>
+            <legend>Gender</legend>
+            <label>
+                <input type="radio" name="gender" value="Male"> Male
+            </label>
+            <label>
+                <input type="radio" name="gender" value="Female"> Female
+            </label>
+        </fieldset>
+        <br>
+        <div>
+            <label for="faculty">Faculty</label>
+            <select id="faculty" name="faculty" tabindex="10">
+                <option value="">Select Faculty</option>
+                <option value="science">Science</option>
+                <option value="engineering">Engineering</option>
+                <option value="commerce">Commerce</option>
+                <option value="arts">Arts</option>
+            </select>
+        </div>
+        <br>
+        <fieldset>
+            <legend>Interests</legend>
+            <label><input type="checkbox" name="interests" value="Programming" /> Programming</label>
+            <label><input type="checkbox" name="interests" value="Reading" /> Reading</label>
+            <label><input type="checkbox" name="interests" value="Swimming"> Swimming</label>
+            <label><input type="checkbox" name="interests" value="Gaming"> Gaming</label>
+        </fieldset>
+        <br>
+        <div>
+            <label for="about">About You</label>
+            <textarea id="about" name="about" rows="4" tabindex="15"></textarea>
+        </div>
+        <div>
+            <label>
+                <input type="checkbox" name="terms" required tabindex="16" />
+                I agree to the
+                <a href="terms.html" target="_blank">terms and conditions</a>
+            </label>
+        </div>
+        <br>
+        <div>
+            <input type="submit" value="Register">
+            <input type="reset" value="Clear">
+        </div>
+    </form>
+
+</body>
+
+</html>

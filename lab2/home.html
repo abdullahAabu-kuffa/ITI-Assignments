@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HOME</title>
+    <style>
+        .move-word {
+            font-size: 28px;
+            margin-top: 200px;
+            color: darkgreen;
+            font-weight: bold;
+            animation: moveLeftRight 3s ease-in-out infinite alternate;
+            display: inline-block;
+        }
+
+        @keyframes moveLeftRight {
+            0% {
+                transform: translateX(0);
+            }
+
+            100% {
+                transform: translateX(200px);
+            }
+        }
+    </style>
+</head>
+
+<body style="display: flex; justify-content: center;">
+    <table id="header" style="width: 1400px; height: 600px;" border="1" cellpadding="10">
+        <tr>
+            <td colspan="4" style="text-align: center;">
+                <img src="images/welcome.avif" alt="" width="100">
+            </td>
+        </tr>
+        <tr>
+            <td colspan="4" style="text-align: center;">
+                <div style="text-align: center;">
+                    <span>
+                        <a href="rec/home.html" target="_blank">home</a>
+                    </span>
+                    <span>
+                        <a href="rec/contactus.html" target="_blank">contact us</a>
+                    </span>
+                    <span>
+                        <a href="rec/about.html" target="_blank">about</a>
+                    </span>
+                </div>
+            </td>
+        </tr>
+        <tr>
+            <td width="200" style="text-align: center; font-weight: bold;">
+                <form action="">
+                    <label for="username">Username:</label>
+                    <input type="text" id="username" name="username" required>
+                    <br>
+                    <br>
+                    <label for="password">Password:</label>
+                    <input type="password" id="password" name="password" required>
+                    <br>
+                    <input type="image" src="images/gotop.png" alt="Login " width="50" height="50"
+                        style="border: none; cursor: pointer; margin-top: 30px;">
+                </form>
+            </td>
+            <td rowspan="3" colspan="2">
+                <div style=" display: flex; justify-content: center; align-items: center; flex-direction: column;">
+                    <h6>My personal info:</h6>
+                    <ul>
+                        <li>
+                            Age: 24 years
+                        </li>
+                        <li>
+                            Address: Dirout-Assiut
+                        </li>
+                        <li>
+                            Phones: 01146317345
+                        </li>
+                        <li>
+                            <a href="https://aun.edu.eg/science/home" target="_blank">Faculty Of science
+                            </a>
+                        </li>
+                        <li>
+                            Graduation year: 2023
+                        </li>
+                        <li>
+                            <h6>Hobbies:</h6>
+                            <ol>
+                                <li>
+                                    Playing Football
+                                </li>
+                                <li>
+                                    Playstation games
+                                </li>
+                            </ol>
+                        </li>
+                        <li>
+                            <a href="mailto:abdullahaabdukuffa@gmail.com" target="_blank"
+                                style="border-radius: 10px; padding: 10px 15px;">SEND
+                                ME EMAIL</a>
+                        </li>
+                    </ul>
+                </div>
+            </td>
+            <td style="text-align: center; width: 300px;">
+                <img src="images/person.png" alt="" width="200px" height="200px">
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <div style="text-align: center; margin-top: 20px;">
+                    <div style="margin-bottom: 10px;">My Social Profiles:</div>
+                    <div>
+                        <a href="https://www.facebook.com" target="_blank"><img src="images/facebook.png" alt="Facebook"
+                                width="20"></a>
+                    </div>
+                    <div>
+                        <a href="https://www.linkedin.com" target="_blank"><img src="images/linkedin.png" alt="LinkedIn"
+                                width="20"></a>
+                    </div>
+                    <div>
+                        <a href="https://www.x.com" target="_blank"><img src="images/twitterpng.png" alt="Twitter"
+                                width="20"></a>
+                    </div>
+                </div>
+            </td>
+            <td class="move-word" style="height: 200px; text-align: center; border: none;" rowspan="2">
+                <marquee>
+                    NEWS
+                </marquee>
+            </td>
+        </tr>
+        <tr>
+            <td><iframe src="task2.html"></iframe></td>
+
+        </tr>
+        <tr>
+            <td colspan="4" style="text-align: center;">
+                <div>
+                    <a href="#header">
+                        top of the page
+                    </a>
+                </div>
+                <div style="text-align: center; color: red;">Copyrights © are reserved to ITI.</div>
+
+            </td>
+        </tr>
+    </table>
+
+</body>
+
+</html>
