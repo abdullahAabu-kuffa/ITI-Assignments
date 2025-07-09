@@ -1,0 +1,57 @@
+    * {
+        border: 0;
+        margin: 0;
+        box-sizing: border-box;
+    }
+
+    p,
+    div,
+    span {
+        font-family: "Lucida Calligraphy", cursive;
+    }
+
+    div h1 {
+        text-align: center;
+    }
+
+
+    nav {
+        background-color: rgb(56, 54, 54);
+        height: 50px;
+    }
+
+
+    .navbar li {
+        list-style-type: none;
+        display: inline-block;
+        width: auto;
+        height: auto;
+        margin-top: 10px;
+    }
+
+    .navbar li>a:hover {
+        background-color: green;
+    }
+
+    .navbar a {
+        text-decoration: none;
+        color: white;
+        padding: 5px 10px;
+        float: left;
+        display: block;
+    }
+
+    .content {
+        background-color: white;
+        padding: 16px;
+    }
+
+    #area {
+        width: 1000px;
+        height: 300px;
+        background-color: #eee;
+    }
+
+    span {
+        padding: 10px;
+    }
