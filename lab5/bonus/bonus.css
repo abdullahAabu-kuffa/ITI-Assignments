@@ -1,0 +1,104 @@
+h1 {
+    text-align: center;
+}
+
+table {
+    width: 900px;
+    text-align: center;
+    border-collapse: collapse;
+    margin: 20px auto;
+    font-family: Arial, sans-serif;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+th,
+td {
+    border: 1px solid #444;
+    padding: 10px;
+    text-align: left;
+    background-color: #f9f9f9;
+}
+
+td:first-child {
+    font-weight: bold;
+    background-color: #eee;
+}
+
+.myskills {
+    width: 600px;
+    height: 320px;
+    margin: 40px auto;
+    border: 2px outset #444;
+    font-family: Arial, sans-serif;
+}
+
+.head {
+    margin: 0 0 20px 0;
+    background-color: #eee;
+    padding: 10px 20px;
+    border-bottom: #8b8a8a 1px solid;
+}
+
+i {
+    color: green;
+}
+
+.content {
+    padding: 0 20px;
+    margin: 0;
+}
+
+.skills-content {
+    border: #444 solid 1px;
+    height: 100px;
+}
+
+h6 {
+    margin: 10px 0;
+}
+
+.lor {
+    margin: 10px 0;
+    font-size: 14px;
+}
+
+.sav-can {
+    color: #000;
+}
+
+.save {
+    color: white;
+    background-color: green;
+    border: none;
+    border-radius: 2px;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    -ms-border-radius: 2px;
+    -o-border-radius: 2px;
+    padding: 5px 10px;
+}
+
+.cancel {
+    color: green;
+    border: none;
+    background-color: white;
+    border-radius: 2px;
+    padding: 5px 10px;
+    -webkit-border-radius: 2px;
+}
+
+.skills-content {
+    overflow: auto;
+    padding: 10px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+}
+
+.skills-content div {
+
+    margin: 5px 0;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: #f0f0f0;
+}
