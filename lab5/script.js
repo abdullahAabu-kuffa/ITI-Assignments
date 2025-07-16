@@ -75,32 +75,32 @@
 
 // 8:
 "use strict";
-// function getUserInfo() {
-//     let name = "";
-//     let birthYear = 0;
-//     while (true) {
-//         name = prompt("Enter your name:");
-//         if (name) {
-//             break;
-//         }
-//         alert("Please enter a valid name (letters only).");
-//     }
-//     while (true) {
-//         birthYear = parseInt(prompt("Enter your birth year (before 2010):"));
-//         if (!isNaN(birthYear) && birthYear < 2010) {
-//             break;
-//         }
-//         alert("Please enter a valid birth year less than 2010.");
-//     }
+function getUserInfo() {
+    let name = "";
+    let birthYear = 0;
+    while (true) {
+        name = prompt("Enter your name:");
+        if (name) {
+            break;
+        }
+        alert("Please enter a valid name (letters only).");
+    }
+    while (true) {
+        birthYear = parseInt(prompt("Enter your birth year (before 2010):"));
+        if (!isNaN(birthYear) && birthYear < 2010) {
+            break;
+        }
+        alert("Please enter a valid birth year less than 2010.");
+    }
 
-//     const currentYear = new Date().getFullYear();
-//     const age = currentYear - birthYear;
+    const currentYear = new Date().getFullYear();
+    const age = currentYear - birthYear;
 
-//     const output = `
-//     <h3>User Information</h3>
-//     <p><strong>Name:</strong> ${name}</p>
-//     <p><strong>Birth Year:</strong> ${birthYear}</p>
-//     <p><strong>Age:</strong> ${age}</p>`;
-//     document.getElementById("result").innerHTML = output;
-// }
-// getUserInfo();
+    const output = `
+    <h3>User Information</h3>
+    <p><strong>Name:</strong> ${name}</p>
+    <p><strong>Birth Year:</strong> ${birthYear}</p>
+    <p><strong>Age:</strong> ${age}</p>`;
+    document.getElementById("result").innerHTML = output;
+}
+getUserInfo();
