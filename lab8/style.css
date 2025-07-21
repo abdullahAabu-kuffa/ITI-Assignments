@@ -1,0 +1,28 @@
+body {
+    margin: 30px;
+}
+
+.time {
+    background-color: #eee;
+    padding: 25px;
+    width: 100px;
+    height: 100px;
+}
+
+.time button {
+    background-color: aqua;
+}
+
+.invalid-msg {
+    color: red;
+    margin-left: 10px;
+    display: none;
+}
+
+#search {
+    width: 200px;
+}
+
+.image-opacity {
+    width: 300px;
+}

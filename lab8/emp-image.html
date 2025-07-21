@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="image">
+        <img id="star" src="images/star-empty.jpeg" alt="star" style="cursor:pointer;">
+    </div>
+    <script>
+        const star = document.getElementById("star");
+        let isClicked = false;
+        function filledStar() {
+            if (!isClicked) {
+                star.src = 'images/star-filled.png';
+            }
+        }
+        function emptyStar() {
+            if (!isClicked) {
+                star.src = 'images/star-empty.jpeg';
+            }
+        }
+        function clickedStar() {
+            isClicked = !isClicked;
+            if (isClicked) {
+                star.src = 'images/star-filled.png';
+            } else {
+                star.src = 'images/star-empty.jpeg';
+            }
+        }
+        star.addEventListener('mouseover', filledStar);
+        star.addEventListener('mouseout', emptyStar);
+        star.addEventListener('click', clickedStar);
+    </script>
+</body>
+
+</html>

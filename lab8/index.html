@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <form action="">
+        <input type="text" id="myInput" onkeydown="whichKeyboardKey()" onmousedown="whichMouseButton(event)">
+    </form>
+    <br>
+    <div class="time">
+        <button id="startclock" onclick="startClock()">Start Clock</button>
+        <p id="showTime"></p>
+    </div>
+    <br>
+    <form id="registrationForm" autocomplete="off" action="thankyou.html" method="get">
+        <label for="fullName">Full Name:</label>
+        <input type="text" id="fullName" name="fullName" placeholder="Enter your Name:" required>
+        <span id="nameMsg" class="invalid-msg">invalid name</span>
+        <br><br>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+        <br><br>
+        <label for="city">City:</label>
+        <select id="city" name="city" required>
+            <option value="">Select City</option>
+            <option value="Cairo">Cairo</option>
+            <option value="Alexandria">Alexandria</option>
+            <option value="Giza">Giza</option>
+            <option value="Aswan">Aswan</option>
+            <option value="Luxor">Luxor</option>
+        </select>
+        <br><br>
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required>
+        <br><br>
+        <label for="repeatPassword">Repeat Password:</label>
+        <input type="password" id="repeatPassword" name="repeatPassword" required>
+        <span id="passMsg" class="invalid-msg">password and repeat password should be the same</span>
+        <br><br>
+        <input type="checkbox" id="terms" name="terms" required>
+        <label for="terms">I accept the terms and conditions</label>
+        <br><br>
+        <button type="submit" id="registerBtn">Register</button>
+    </form>
+    <br>
+    <br>
+    <div class="image">
+        <img class="image-opacity" src="images/shuffle-01.jpg" alt="">
+        <img class="image-opacity" src="images/shuffle-05.jpg" alt="">
+        <img class="image-opacity" src="images/shuffle-06.jpg" alt="">
+        <img class="image-opacity" src="images/shuffle-07.jpg" alt="">
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>

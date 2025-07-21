@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <form action="">
+        <input id="search" type="text" placeholder="search..">
+    </form>
+    <script>
+        const searchText = document.getElementById("search");
+        searchText.addEventListener("focus", function () {
+            searchText.style.border = "solid 1px blue";
+            searchText.style.width = "600px";
+            searchText.style.transition = "width 0.5s ease";
+        });
+        searchText.addEventListener("blur", function () {
+            searchText.style.border = "";
+            searchText.style.width = "200px";
+        });
+    </script>
+</body>
+
+</html>
