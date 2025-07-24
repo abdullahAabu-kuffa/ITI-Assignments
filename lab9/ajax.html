@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Ajax</title>
+</head>
+
+<body>
+    <form onsubmit="displayUserById(event)">
+        <label>ID: </label>
+        <input type="number" name="id" required><br>
+
+        <button type="submit">Display</button>
+        <br>
+    </form>
+    <div class="container">
+        <div id="card">
+            <div>
+                <h2>User Data</h2>
+                <div id="id">ID:</div>
+                <div id="firstname">First Name:</div>
+                <div id="lastname">Last Name:</div>
+                <img id="avatar" alt="Waiting">
+            </div>
+        </div>
+        <div class="dropdown">
+            <select onchange="displayUserByName(event)" id="selectName">
+                <option value="All">All</option>
+                <option value="George">George</option>
+                <option value="Janet">Janet</option>
+                <option value="Emma">Emma</option>
+                <option value="Eve">Eve</option>
+                <option value="Charles">Charles</option>
+                <option value="Tracey">Tracey</option>
+            </select>
+            <div id="usersList"></div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
