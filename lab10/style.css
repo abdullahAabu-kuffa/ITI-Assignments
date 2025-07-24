@@ -1,0 +1,43 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 100px;
+}
+
+.controls {
+    margin-bottom: 12px;
+}
+
+.controls label {
+    margin-right: 8px;
+}
+
+.controls select,
+.controls input {
+    margin-right: 12px;
+}
+
+.sort-btn {
+    background-color: #4CAF50;
+    color: white;
+    padding: 6px 12px;
+    cursor: pointer;
+}
+
+.sort-btn:hover {
+    background-color: #45a049;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th,
+td {
+    padding: 8px 12px;
+    border: 1px solid #ddd;
+}
+
+th {
+    background-color: #f2f2f2;
+}

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Countries</title>
+</head>
+
+<body>
+</body>
+<div class="controls">
+    <label for="regionFilter">Region:</label>
+    <select onchange="filterByRegion(event)" id="regionFilter">
+        <option value="All">All</option>
+        <option value="Europe">Europe</option>
+        <option value="South America">South America</option>
+        <option value="Asia">Asia</option>
+        <option value="Africa">Africa</option>
+        <option value="Oceania">Oceania</option>
+        <option value="North America">North America</option>
+    </select>
+    <label for="searchInput">Search:</label>
+    <input onchange="filterByName(event)" type="text" id="searchInput" placeholder="Country name...">
+    <button onclick="sortByPopulation(event)" id="sortBtn" class="sort-btn">Sort by Population ↑</button>
+</div>
+<table id="countriesTable">
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Region</th>
+            <th>Population</th>
+            <th>Languages</th>
+        </tr>
+    </thead>
+    <tbody>
+        <!-- Data will be rendered here -->
+    </tbody>
+</table>
+<script src="script.js"></script>
+</body>
+
+</html>

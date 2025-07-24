@@ -1,0 +1,90 @@
+[
+    {
+        "name": "Japan",
+        "region": "Asia",
+        "population": 125800000,
+        "languages": [
+            "Japanese"
+        ]
+    },
+    {
+        "name": "Germany",
+        "region": "Europe",
+        "population": 83100000,
+        "languages": [
+            "German"
+        ]
+    },
+    {
+        "name": "Brazil",
+        "region": "South America",
+        "population": 212600000,
+        "languages": [
+            "Portuguese"
+        ]
+    },
+    {
+        "name": "Nigeria",
+        "region": "Africa",
+        "population": 206100000,
+        "languages": [
+            "English",
+            "Hausa",
+            "Yoruba",
+            "Igbo"
+        ]
+    },
+    {
+        "name": "Australia",
+        "region": "Oceania",
+        "population": 25690000,
+        "languages": [
+            "English"
+        ]
+    },
+    {
+        "name": "Canada",
+        "region": "North America",
+        "population": 38000000,
+        "languages": [
+            "English",
+            "French"
+        ]
+    },
+    {
+        "name": "India",
+        "region": "Asia",
+        "population": 1393409038,
+        "languages": [
+            "Hindi",
+            "English"
+        ]
+    },
+    {
+        "name": "France",
+        "region": "Europe",
+        "population": 65273511,
+        "languages": [
+            "French"
+        ]
+    },
+    {
+        "name": "South Africa",
+        "region": "Africa",
+        "population": 59308690,
+        "languages": [
+            "Zulu",
+            "Xhosa",
+            "Afrikaans",
+            "English"
+        ]
+    },
+    {
+        "name": "Mexico",
+        "region": "North America",
+        "population": 126190788,
+        "languages": [
+            "Spanish"
+        ]
+    }
+]
