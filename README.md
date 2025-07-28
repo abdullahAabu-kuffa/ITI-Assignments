@@ -1,2 +1,2 @@
 # ITI-Ptojects
-It is our  ITI projects training
+It is our  ITI Assignments training
