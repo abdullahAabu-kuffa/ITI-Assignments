@@ -1,0 +1,64 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Page</title>
+</head>
+
+<body style="text-align: center;">
+
+
+    <script>
+        // Step 1: 
+        function showWelcome() {
+            return new Promise((resolve) => {
+                setTimeout(() => {
+                    const welcome = document.createElement('h1');
+                    welcome.textContent = 'Welcome';
+                    document.body.appendChild(welcome);
+                    resolve();
+                }, 3000);
+            });
+        }
+
+        // Step 2: 
+        function showUserImage() {
+            return new Promise((resolve) => {
+                const img = document.createElement('img');
+                img.src = 'https://randomuser.me/api/portraits/men/1.jpg';
+                img.style.display = 'block';
+                img.style.margin = '20px auto';
+                img.onload = () => resolve();
+                document.body.appendChild(img);
+            });
+        }
+
+        // Step 3: 
+        function showThanks() {
+            return new Promise((resolve) => {
+                setTimeout(() => {
+                    const thanks = document.createElement('h2');
+                    thanks.textContent = 'Thanks';
+                    document.body.appendChild(thanks);
+                    resolve();
+                }, 3000);
+            });
+        }
+
+        // Step 4: 
+        function redirectToAnotherPage() {
+            setTimeout(() => {
+                window.location.href = 'anotherPage.html';
+            }, 2000);
+        }
+
+        // the promises
+        showWelcome()
+            .then(showUserImage)
+            .then(showThanks)
+            .then(redirectToAnotherPage);
+    </script>
+</body>
+
+</html>
