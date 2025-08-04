@@ -111,6 +111,8 @@ function postPost() {
 // }
 // var image = new Image('afas', new Size(200, 100));
 // console.log(image.cloneImage());
+
+
 // function Employee(title) {
 //     this.title = title;
 // }
