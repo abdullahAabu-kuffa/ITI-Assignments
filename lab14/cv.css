@@ -1,0 +1,35 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+.container {
+    text-align: center;
+    background-color: #ccc;
+    padding: 20px;
+}
+
+/* grid */
+
+.head p {
+    margin-bottom: 10px;
+}
+
+.container .content .content {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, auto));
+    gap: 10px;
+}
+
+.container .content h3 {
+    background-color: darkcyan;
+    height: 40px;
+    padding: 10px;
+    font-size: 25px;
+}
+
+.container .content p {
+    padding: 30px;
+    background-color: rgb(83, 183, 150);
+}
